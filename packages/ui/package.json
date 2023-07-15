@@ -1,0 +1,37 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "types": "./dist/index.d.cts",
+  "main": "./dist/index.cjs",
+  "type": "module",
+  "exports": {
+    ".": [
+      {
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs"
+      },
+      {
+        "import": "./dist/index.d.ts",
+        "require": "./dist/index.d.cts"
+      }
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup --format cjs,esm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^18.2.15",
+    "react": "^18.2.0",
+    "tsup": "^7.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
