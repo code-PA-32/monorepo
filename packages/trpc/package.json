@@ -22,18 +22,22 @@
     "src"
   ],
   "scripts": {
-    "build": "tsup --format cjs,esm"
+    "build": "tsup --format cjs,esm",
+    "introspect": "drizzle-kit introspect:mysql"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@planetscale/database": "^1.8.0",
     "@trpc/client": "^10.34.0",
     "@trpc/server": "^10.34.0",
+    "drizzle-orm": "^0.27.2",
     "tsup": "^7.1.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "drizzle-kit": "^0.19.5",
     "typescript": "^5.1.6"
   }
 }

@@ -1,0 +1,7 @@
+DATABASE_HOST=aws.connect.psdb.cloud
+DATABASE_USERNAME=wo42s11j4dx97aoa08a0
+DATABASE_PASSWORD=pscale_pw_fg4q2ph5UH6zdoksVASCWkEW8aD7HFUQNmpfg2OYWJ5
+
+
+
+DATABASE_URL='mysql://wo42s11j4dx97aoa08a0:pscale_pw_fg4q2ph5UH6zdoksVASCWkEW8aD7HFUQNmpfg2OYWJ5@aws.connect.psdb.cloud/test?ssl={"rejectUnauthorized":true}'
