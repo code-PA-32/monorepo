@@ -1,7 +1,7 @@
 {
   "include": ["src", "tsup.config.ts"],
   "compilerOptions": {
-    "module": "ES2020",
+    "module": "CommonJS",
     "lib": ["dom", "esnext"],
     "declaration": false,
     "sourceMap": true,
@@ -12,11 +12,10 @@
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true
+    "forceConsistentCasingInFileNames": true
   }
 }

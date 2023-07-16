@@ -32,6 +32,36 @@ declare const exampleRouter: _trpc_server.CreateRouterInner<_trpc_server.RootCon
     }, {
         greeting: string;
     }>;
+    getData: _trpc_server.BuildProcedure<"query", {
+        _config: _trpc_server.RootConfig<{
+            ctx: object;
+            meta: object;
+            errorShape: _trpc_server.DefaultErrorShape;
+            transformer: _trpc_server.DefaultDataTransformer;
+        }>;
+        _ctx_out: object;
+        _input_in: typeof _trpc_server.unsetMarker;
+        _input_out: typeof _trpc_server.unsetMarker;
+        _output_in: typeof _trpc_server.unsetMarker;
+        _output_out: typeof _trpc_server.unsetMarker;
+        _meta: object;
+    }, ({
+        quotes: any;
+        author: any;
+        category: any;
+    } | {
+        quotes: any;
+        author: any;
+        category: any;
+    } | {
+        quotes: any;
+        author: any;
+        category: any;
+    } | {
+        quotes: any;
+        author: any;
+        category: any;
+    })[]>;
 }>;
 
 declare const appRouter: _trpc_server.CreateRouterInner<_trpc_server.RootConfig<{
@@ -66,6 +96,36 @@ declare const appRouter: _trpc_server.CreateRouterInner<_trpc_server.RootConfig<
         }, {
             greeting: string;
         }>;
+        getData: _trpc_server.BuildProcedure<"query", {
+            _config: _trpc_server.RootConfig<{
+                ctx: object;
+                meta: object;
+                errorShape: _trpc_server.DefaultErrorShape;
+                transformer: _trpc_server.DefaultDataTransformer;
+            }>;
+            _ctx_out: object;
+            _input_in: typeof _trpc_server.unsetMarker;
+            _input_out: typeof _trpc_server.unsetMarker;
+            _output_in: typeof _trpc_server.unsetMarker;
+            _output_out: typeof _trpc_server.unsetMarker;
+            _meta: object;
+        }, ({
+            quotes: any;
+            author: any;
+            category: any;
+        } | {
+            quotes: any;
+            author: any;
+            category: any;
+        } | {
+            quotes: any;
+            author: any;
+            category: any;
+        } | {
+            quotes: any;
+            author: any;
+            category: any;
+        })[]>;
     }>;
 }>;
 type AppRouter = typeof appRouter;

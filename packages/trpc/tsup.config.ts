@@ -5,4 +5,8 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   dts: true,
+  format: ["cjs"],
+  external: ["@planetscale/database"],
+  minify: false,
+  treeshake: false,
 });

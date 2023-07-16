@@ -9,7 +9,7 @@ import {
 } from "drizzle-orm/mysql-core";
 import { sql } from "drizzle-orm";
 
-export const authors = mysqlTable(
+export const authors: AnyMySqlColumn = mysqlTable(
   "authors",
   {
     id: int("id").autoincrement().primaryKey().notNull(),
@@ -22,7 +22,7 @@ export const authors = mysqlTable(
   }
 );
 
-export const categories = mysqlTable(
+export const categories: AnyMySqlColumn = mysqlTable(
   "categories",
   {
     id: int("id").autoincrement().primaryKey().notNull(),
@@ -35,7 +35,7 @@ export const categories = mysqlTable(
   }
 );
 
-export const quotes = mysqlTable(
+export const quotes: AnyMySqlColumn = mysqlTable(
   "quotes",
   {
     id: int("id").autoincrement().primaryKey().notNull(),
