@@ -1,5 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config({ path: ".env" });
+
 export const config = {
-  host: "aws.connect.psdb.cloud",
-  username: "wo42s11j4dx97aoa08a0",
-  password: "pscale_pw_fg4q2ph5UH6zdoksVASCWkEW8aD7HFUQNmpfg2OYWJ5",
+  host: process.env.DATABASE_HOST,
+  username: process.env.DATABASE_USERNAME,
+  password: process.env.DATABASE_PASSWORD,
 };
